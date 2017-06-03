@@ -1,0 +1,27 @@
+# ingreso a usuario root
+
+# Ingreso para editar ip del servidor debian
+
+	cd /etc/nework
+	nano interfaces
+
+# modificamos la ip statica
+	
+	# The loopback network interface
+
+	auto lo
+	iface lo inet loopback
+
+	# The primary network interface
+
+	auto eth0
+	iface eth0 inet static
+		address 192.168.1.52
+		netmask 255.255.255.0
+		broadcast 192.168.1.255
+		network 192.168.1.0
+		gateway 192.168.1.1
+
+	# This is an autoconfigured IPv6 interface
+
+		iface eth0 inet6 auto

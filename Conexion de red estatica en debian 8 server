@@ -1,11 +1,11 @@
-# ingreso a usuario root
+1 ingreso a usuario root
 
-# Ingreso para editar ip del servidor debian
+2 Ingreso para editar ip del servidor debian
 
 	cd /etc/nework
 	nano interfaces
 
-# modificamos la ip statica
+3 modificamos la ip statica
 	
 	# The loopback network interface
 
@@ -25,3 +25,8 @@
 	# This is an autoconfigured IPv6 interface
 
 		iface eth0 inet6 auto
+
+4 Reiniciar la tarjeta de red
+	
+	/etc/init.d/networking restart
+	
